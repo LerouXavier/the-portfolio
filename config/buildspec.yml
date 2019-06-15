@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+    - npm install
+  build:
+    commands:
+    - npm run export
+  post_build:
+    commands:
+      - aws s3 rm --recursive "s3://${ARTIFACTS_BUCKET}/"
+artifacts:
+  files:
+  - '**/*'
+  base-directory: out
+  name: ReactBuildArtifact

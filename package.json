@@ -1,0 +1,52 @@
+{
+  "name": "the-portfolio",
+  "version": "1.0.0",
+  "description": "Simple portfolio page",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@zeit/next-sass": "^1.0.1",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "jest": "^24.8.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "react-addons-test-utils": "^15.6.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "next",
+    "build": "next build",
+    "preexport": "npm run prettier && npm run build",
+    "export": "next export",
+    "prettier": "prettier --write 'pages/*.{js,jsx}'",
+    "eslint": "./node_modules/.bin/eslint pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LerouXavier/the-portfolio.git"
+  },
+  "keywords": [
+    "react",
+    "next.js",
+    "scss",
+    "aws"
+  ],
+  "author": "Dominik Kalinowski",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/LerouXavier/the-portfolio/issues"
+  },
+  "homepage": "https://github.com/LerouXavier/the-portfolio#readme"
+}
