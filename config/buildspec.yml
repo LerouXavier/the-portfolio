@@ -11,6 +11,7 @@ phases:
     - npm run export
   post_build:
     commands:
+      - echo $ARTIFACTS_BUCKET
       - aws s3 rm --recursive "s3://${ARTIFACTS_BUCKET}/"
 artifacts:
   files:
